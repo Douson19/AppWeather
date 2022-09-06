@@ -1,0 +1,103 @@
+body{
+    overflow: hidden;
+}
+
+input.form-control{
+    background-color: #0cdfdf;
+    color: rgb(0, 0, 0);
+}
+
+.row{
+    background-color: #e9f0ee;
+    height: 800px;
+    top: 0px;
+}
+
+div.card.card-body{
+    height: 150px;
+    width: 375px;
+    top: 150px;
+    left: 18px;
+    bottom: 5px;
+    background-color: #44c08a;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    max-width: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group{
+    padding: 2px;
+    border-radius: 8px;
+}
+
+div.card>p {
+    font-size: 11px;
+    top: 20px;
+    left: 10px;
+    max-width: 400px;
+    margin-top: -3px;
+    margin-bottom: 12px;
+    color: black;
+
+}
+
+.alert {
+    top: 158px;
+    left: 19px;
+    width: 375px;
+    background-color: #DC143C;
+    max-width: 400px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+
+.button{
+    position: relative;
+    top: 5px;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #DC143C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: width .5s, border-radius .5s;
+}
+
+.button *{
+    position: absolute;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}
+
+.gg-check{
+    opacity: 0;
+}
+
+.button:focus {
+    width: 10%;
+    background-color: #DC143C;
+    border-radius: 50%;
+}
+
+.button:focus .text{
+    opacity: 0;
+}
+
+.button:focus .gg-check{
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+
